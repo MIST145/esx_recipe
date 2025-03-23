@@ -16,7 +16,7 @@ tasks:
   
   ## Download and prepare server.cfg / loadingscreen / database
   - action: download_github
-    src: https://github.com/MIST145/esx_recipe
+    src: https://github.com/DonStylz74/esx-recipes
     ref: legacy
     dest: ./recipe
 
@@ -160,9 +160,14 @@ tasks:
   - action: waste_time # prevent github throttling
     seconds: 5
     
+  ###########################################
+  ## CUSTOM SCRIPT INJECTION & INSTALATION ##
+  ###########################################
+
+  ## - UnComment bellow action, to install donz loading screen
   - action: download_github
-    src: https://github.com/DonStylz74/bob74_ipl
-    ref: main
+    src: https://github.com/Bob74/bob74_ipl
+    ref: master
     dest: ./resources/[mapping]/bob74_ipl
 
   - action: download_github
@@ -185,6 +190,7 @@ tasks:
     ref: master
     dest: ./resources/[dependants]/screenshot-basic
 
+## - Advanced Vehicle Damage TRUE - JG Advanced Garage
   - action: download_github
     src: https://github.com/DonStylz74/VehicleDeformation
     ref: main
@@ -219,6 +225,11 @@ tasks:
     src: https://github.com/DonStylz74/CayoTwoIslands
     ref: main
     dest: ./resources/[esx_addons]/CayoTwoIslands
+
+  ##- action: download_github
+  #  src: https://github.com/DonStylz74/esx-sna-fuel
+  #  ref: main
+  #  dest: ./resources/[esx_extras]/esx-sna-fuel
 
   - action: download_github
     src: https://github.com/DonStylz74/lation_pawnshop
@@ -262,6 +273,11 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/5m-Elevator
 
+  #- action: download_github
+  #  src: https://github.com/DonStylz74/customplates
+  #  ref: main
+  #  dest: ./resources/[standalone]/customplates
+
   - action: download_github
     src: https://github.com/DonStylz74/OT_pushvehicle
     ref: main
@@ -278,6 +294,12 @@ tasks:
     src: https://github.com/AvarianKnight/pma-voice
     ref: main
     dest: ./resources/[standalone]/pma-voice
+
+  ##- action: download_github
+  #  src: https://github.com/DonStylz74/it-drugs
+  #  ref: main
+  #  dest: ./resources/[esx_addons]/[drug-system]/it-drugs
+
 
   - action: waste_time # prevent github throttling
     seconds: 5
@@ -311,7 +333,7 @@ tasks:
     src: https://github.com/overextended/ox_target
 
   - action: download_file
-    path: ./tmp/oxmy.zip
+    path: ./tmp/oxmysql.zip
     url: https://github.com/overextended/oxmysql/releases/latest/download/oxmysql.zip
   - action: unzip
     dest: ./resources/[ox]
@@ -403,8 +425,8 @@ tasks:
   #- action: waste_time # prevent github throttling
   #  seconds: 3
   
-  #- action: query_database
-  #  file: ./recipe/vehicles-472-total.sql
+  - action: query_database
+    file: ./recipe/vehicles-472-total.sql
 
   - action: waste_time # prevent SQL throttling
     seconds: 5
