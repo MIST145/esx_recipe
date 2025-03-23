@@ -7,5 +7,5 @@ Please check the [**Recipe Documentation Page**](https://github.com/tabarra/txAd
 
 ### Recipe URL:
 ```
-https://raw.githubusercontent.com/MIST145/esx-recipes/main/recope.yaml
+https://raw.githubusercontent.com/MIST145/esx-recipes/main/recipe.yaml
 ```
