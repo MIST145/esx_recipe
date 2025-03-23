@@ -1,1 +1,11 @@
-https://raw.githubusercontent.com/MIST145/esx_recipe/main/recipe.yaml
+# txAdminRecipe
+
+**Description:** An improved simple, lightweight development server recipe for TxAdmin **without database integration**. Perfect for asset developers who would just like to load in to validate their work in-game.
+
+This recipe runs inside [**txAdmin**](https://github.com/tabarra/txAdmin).
+Please check the [**Recipe Documentation Page**](https://github.com/tabarra/txAdmin/blob/master/docs/recipe.md).
+
+### Recipe URL:
+```
+https://raw.githubusercontent.com/MIST145/esx-recipes/main/recope.yaml
+```
